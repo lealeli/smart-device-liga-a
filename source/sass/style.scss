@@ -1,3 +1,13 @@
-h1 {
-  color: red;
-}
+@import "variables.scss";
+@import "fonts.scss";
+@import "components/advantages.scss";
+@import "components/catalog.scss";
+@import "components/contacts.scss";
+@import "components/main-banner.scss";
+@import "components/main-nav.scss";
+@import "components/order-form";
+@import "components/page.scss";
+@import "components/page-footer.scss";
+@import "components/page-header";
+@import "components/video-bike";
+@import "components/visually-hidden.scss";

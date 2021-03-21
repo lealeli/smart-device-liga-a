@@ -9,43 +9,46 @@
   <link as="font" href="fonts/open-sans-600.woff2" rel="preload">
   <link as="font" href="fonts/open-sans-700.woff2" rel="preload">
   <title>Магазин велосипедов Moon</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
 <header class="page-header">
-  <a class="page-header__logo" href="/">
-    <img alt="Магазин велосипедов Moon" height="22" src="img/logo.svg" width="58">
-  </a>
-  <nav class="main-nav">
-    <ul class="main-nav__list">
-      <li class="main-nav__item"><a class="main-nav__link" href="#about">О нас</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="#goods">Виды велосипедов</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="#video">Видео про велосипеды</a></li>
-      <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
-    </ul>
-    <button class="main-nav__toggle" type="button">
-      <span class="visually-hidden">Меню</span>
-    </button>
-  </nav>
+  <div class="page-header__wrapper">
+    <a class="page-header__logo" href="/" tabindex="0">
+      <img alt="Магазин велосипедов Moon" height="22" src="img/logo.svg" width="58">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="#about" tabindex="0">О нас</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#goods" tabindex="0">Виды велосипедов</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#video" tabindex="0">Видео про велосипеды</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#contacts" tabindex="0">Контакты</a></li>
+      </ul>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </nav>
+  </div>
 </header>
 <main class="page__main">
   <section class="main-banner">
     <div class="main-banner__wrapper">
-      <div class="main-banner__info">
-        <h1 class="main-banner__header">Мы продаем
-          велосипеды</h1>
-        <p class="main-banner__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      <div class="main-banner__wrap">
+        <div class="main-banner__info">
+          <h1 class="main-banner__header">Мы продаем велосипеды</h1>
+          <p class="main-banner__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+        <form action="/" class="order-form">
+          <p class="order-form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+
+          <input class="order-form__input-info" id="name" name="name" placeholder="Введите Ваше Имя" type="text" required="">
+          <label class="order-form__value" for="name"></label>
+          <input class="order-form__input-info" id="tel" name="tel" pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}" placeholder="Введите Ваш номер телефона" required="" type="tel">
+          <label class="order-form__value" for="tel"></label>
+
+          <button class="order-form__button" type="submit">Подобрать велосипед мечты</button>
+        </form>
       </div>
-      <form action="" class="order-form">
-        <p class="order-form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-
-        <input class="order-form__input-info" id="name" name="name" placeholder="Введите Ваше Имя" type="text">
-        <label class="order-form__value" for="name"></label>
-        <input class="order-form__input-info" id="tel" name="tel" placeholder="Введите Ваш номер телефона" required="" type="tel">
-        <label class="order-form__value" for="tel"></label>
-
-        <button class="order-form__button" type="submit">Подобрать велосипед мечты</button>
-      </form>
     </div>
   </section>
   <section class="advantages">
@@ -70,7 +73,7 @@
     </ul>
   </section>
   <section class="catalog">
-    <h2 class="catalog_header" id="#goods">Виды велосипедов</h2>
+    <h2 class="catalog_header" id="goods">Виды велосипедов</h2>
     <ul class="catalog__list">
       <li class="catalog__item">
         <picture>
@@ -108,7 +111,7 @@
     </ul>
   </section>
   <section class="video-bike">
-    <h2 class="video-bike__header" id="#video">Видео про велосипеды</h2>
+    <h2 class="video-bike__header" id="video">Видео про велосипеды</h2>
     <p class="video-bike_text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
     <div class="video-bike__player"></div>
     <picture>
@@ -122,29 +125,32 @@
     <button class="video-bike__button" type="button"><img src="img/icon-play.svg" alt="Кнопка запуска видео про велосипеды"></button>
   </section>
   <section class="contacts">
-    <h2 class="contacts_header" id="#contacts">Как нас найти?</h2>
-    <p class="contacts_address">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <picture>
-      <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
-      <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
-      <source srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
-      <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
-      <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-      <img alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" class="contact__img" height="530" width="957" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x">
-    </picture>
+    <div class="contacts__wrapper">
+      <h2 class="contacts_header" id="contacts">Как нас найти?</h2>
+      <p class="contacts_address">Мы находимся по адресу: Санкт&#8209;Петербург, ул. Большая Конюшенная, д. 19</p>
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
+        <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
+        <source srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
+        <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
+        <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+        <img alt="Адрес: Санкт-Петербург, ул. Большая Конюшенная, д. 19" class="contact__img" height="530" width="957" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x">
+      </picture>
+    </div>
   </section>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__contact-email" href="mailto:puteshestviemechta@gmail.ru">
-    <svg class="page-footer__contact-email-img" height="24" width="17">
+  <a class="page-footer__contact" href="mailto:puteshestviemechta@gmail.ru">
+    <svg class="page-footer__contact-img" height="20" width="26">
       <use xlink:href="img/sprite_auto.svg#icon-email" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
     </svg>
     puteshestviemechta@gmail.ru</a>
-  <a class="page-footer__contact-tel" href="tel:+7(499)784-684-46">
-    <svg class="page-footer__contact-tel-img" height="24" width="17">
+  <a class="page-footer__contact" href="tel:+7(499)784-684-46">
+    <svg class="page-footer__contact-img" height="23" width="22">
       <use xlink:href="img/sprite_auto.svg#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
     </svg>
     +7 (499) -784-684-46</a>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

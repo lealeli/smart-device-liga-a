@@ -1,0 +1,36 @@
+.page-header {
+  width: 100%;
+  position: relative;
+}
+
+.page-header__wrapper {
+  position: relative;
+  width: 880px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+
+.page-header__logo {
+  position: absolute;
+  top: 318px;
+  left: 0;
+
+  @media (max-width: $tablet-width) {
+    top: 25px;
+    left: 21px;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}

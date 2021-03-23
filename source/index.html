@@ -140,26 +140,29 @@
     </div>
   </section>
   <section class="video-bike">
-    <h2 class="video-bike__header" id="video">Видео про велосипеды</h2>
-    <p class="video-bike_text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-    <div class="video-bike__player"></div>
-    <picture>
-      <source media="(max-width: 767px)"
-              srcset="img/video-screen-mobile@1x.webp 1x, img/video-screen-mobile@2x.webp 2x"
-              type="image/webp">
-      <source media="(max-width: 1023px)"
-              srcset="img/video-screen-tablet@1x.webp 1x, img/video-screen-tablet@2x.webp 2x"
-              type="image/webp">
-      <source srcset="img/video-screen-desktop@1x.webp 1x, img/video-screen-desktop@2x.webp 2x"
-              type="image/webp">
-      <source media="(max-width: 767px)"
-              srcset="img/video-screen-mobile@1x.jpg 1x, img/video-screen-mobile@2x.jpg 2x">
-      <source media="(max-width: 1023px)"
-              srcset="img/video-screen-tablet@1x.jpg 1x, img/video-screen-tablet@2x.jpg 2x">
-      <img alt="Видео про велосипеды" class="video__img" height="522" width="929"
-           src="img/video-screen-desktop@1x.jpg" srcset="img/video-screen-desktop@2x.jpg 2x">
-    </picture>
-    <button class="video-bike__button" type="button"><img src="img/icon-play.svg" alt="Кнопка запуска видео про велосипеды"></button>
+    <div class="video-bike__wrapper">
+      <h2 class="video-bike__header" id="video">Видео про велосипеды</h2>
+      <p class="video-bike_text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="video-bike__player">
+        <picture>
+          <source media="(max-width: 767px)"
+                  srcset="img/video-screen-mobile@1x.webp 1x, img/video-screen-mobile@2x.webp 2x"
+                  type="image/webp">
+          <source media="(max-width: 1023px)"
+                  srcset="img/video-screen-tablet@1x.webp 1x, img/video-screen-tablet@2x.webp 2x"
+                  type="image/webp">
+          <source srcset="img/video-screen-desktop@1x.webp 1x, img/video-screen-desktop@2x.webp 2x"
+                  type="image/webp">
+          <source media="(max-width: 767px)"
+                  srcset="img/video-screen-mobile@1x.jpg 1x, img/video-screen-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)"
+                  srcset="img/video-screen-tablet@1x.jpg 1x, img/video-screen-tablet@2x.jpg 2x">
+          <img alt="Видео про велосипеды" class="video__img" height="522" width="929"
+               src="img/video-screen-desktop@1x.jpg" srcset="img/video-screen-desktop@2x.jpg 2x">
+        </picture>
+        <button class="video-bike__button" type="button" aria-label="Кнопка запуска видео про велосипеды"></button>
+      </div>
+    </div>
   </section>
   <section class="contacts">
     <div class="contacts__wrapper">
@@ -185,12 +188,12 @@
   </section>
 </main>
 <footer class="page-footer">
-  <a class="page-footer__contact" href="mailto:puteshestviemechta@gmail.ru">
+  <a class="page-footer__contact page-footer__contact--email" href="mailto:puteshestviemechta@gmail.ru">
     <svg class="page-footer__contact-img" height="20" width="26">
       <use xlink:href="img/sprite_auto.svg#icon-email" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
     </svg>
     puteshestviemechta@gmail.ru</a>
-  <a class="page-footer__contact" href="tel:+7(499)784-684-46">
+  <a class="page-footer__contact page-footer__contact--tel" href="tel:+7(499)784-684-46">
     <svg class="page-footer__contact-img" height="23" width="22">
       <use xlink:href="img/sprite_auto.svg#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
     </svg>

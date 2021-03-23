@@ -36,6 +36,7 @@
   @media (max-width: $mobile-width) {
     background: url("../img/main-photo-mobile@1x.jpg") $basic-black center top no-repeat;
     background-size: 320px 390px;
+    height: 390px;
   }
 
   @media (max-width: $mobile-width) and (min-resolution: 2dppx) {
@@ -57,9 +58,9 @@
 }
 
 .main-banner__info {
-  width: 50%;
-  margin-top: 369px;
-  padding-right: 160px;
+  width: 62%;
+  margin-top: 372px;
+  padding-right: 150px;
 
   @media (max-width: $tablet-width) {
     margin-top: 134px;
@@ -105,11 +106,11 @@
   @media (max-width: $tablet-width) {
     font-size: 18px;
     text-align: center;
-    padding: 24px 225px 0 225px;
+    padding: 21px 190px 0 190px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 24px 20px 0 20px;
+    padding: 20px 20px 0 20px;
     min-height: 96px;
   }
 }

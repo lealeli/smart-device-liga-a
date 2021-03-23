@@ -6,7 +6,7 @@
     padding-top: 155px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding-top: 119px;
   }
 }
@@ -27,7 +27,7 @@
   }
 }
 
-.contacts_header {
+.contacts__wrapper h2 {
   font-family: $font-family;
   font-style: normal;
   font-weight: 600;
@@ -51,7 +51,7 @@
   }
 }
 
-.contacts_address {
+.contacts__wrapper p {
   font-family: $font-family;
   font-style: normal;
   font-weight: 400;
@@ -70,5 +70,21 @@
 
   @media (max-width: $mobile-width) {
     padding: 0 15px 19px 15px;
+  }
+}
+
+.contacts__wrapper img {
+  object-fit: cover;
+  height: 530px;
+  width: 957px;
+
+  @media (max-width: $tablet-width) {
+    height: 545px;
+    width: 698px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 250px;
+    width: 320px;
   }
 }

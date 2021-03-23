@@ -18,7 +18,7 @@
   }
 }
 
-.catalog_header {
+.catalog__wrapper h2 {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -39,7 +39,6 @@
 
 .catalog__list {
   padding: 51px 0 0 0;
-  list-style: none;
   display: flex;
   justify-content: space-around;
   margin: 0 25px;
@@ -192,7 +191,7 @@
   }
 }
 
-.catalog__item-title {
+.catalog__item a {
   font-family: $font-family;
   font-style: normal;
   font-weight: 600;
@@ -209,5 +208,15 @@
 
   &:focus {
     opacity: 0.3;
+  }
+}
+
+.catalog__item img {
+  object-fit: cover;
+  height: auto;
+  border-radius: 10px;
+
+  @media (max-width: $tablet-width) {
+    height: 300px;
   }
 }

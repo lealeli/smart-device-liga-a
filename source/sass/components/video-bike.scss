@@ -25,7 +25,7 @@
   }
 }
 
-.video-bike__header {
+.video-bike__wrapper h2 {
   margin: 0;
   padding: 122px 11px 20px 0;
   text-align: center;
@@ -47,7 +47,7 @@
   }
 }
 
-.video-bike_text {
+.video-bike__wrapper p {
   margin: 0;
   padding: 0 290px 56px 290px;
   font-family: $font-family;
@@ -83,7 +83,7 @@
   }
 }
 
-.video-bike__button {
+.video-bike__player button {
   position: absolute;
   width: 65px;
   height: 65px;
@@ -93,6 +93,7 @@
   background: url("../img/icon-play.svg") $special-green center center no-repeat;
   background-size: 13px 18px;
   border: none;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.6;
@@ -117,4 +118,8 @@
     height: 65px;
     background-size: 13px 18px;
   }
+}
+
+.video-bike__player img {
+  object-fit: cover;
 }

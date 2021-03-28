@@ -1,12 +1,15 @@
 .main-nav {
   display: flex;
-  padding: 0 3px 0 3px;
+  flex-wrap: wrap;
+  padding-top: 64px;
   border-bottom: 1px solid $basic-black-transparency2;
   justify-content: center;
   width: 100%;
+  position: absolute;
 
   @media (max-width: $tablet-width) {
     padding: 0;
+    position: relative;
   }
 }
 
@@ -28,6 +31,7 @@
     z-index: 100;
     height: 100%;
     align-content: flex-start;
+    overflow: scroll;
 
     &--nojs {
       position: relative;
@@ -109,6 +113,10 @@
     &--open {
       background: url("../img/icon-menu.svg") $special-green center center no-repeat;
       position: absolute;
+    }
+
+    &--nojs {
+      display: none;
     }
 
     @media (max-width: $mobile-width) {

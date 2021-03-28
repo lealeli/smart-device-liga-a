@@ -39,10 +39,9 @@
   justify-content: center;
 
   @media (max-width: $tablet-width) {
-    padding: 30px 165px 41px 113px;
-    grid-template-columns: 50% 50%;
+    padding: 30px 0 41px 0;
+    grid-template-columns: 38% 38%;
     grid-template-rows: auto auto;
-    grid-column-gap: 50px;
     grid-row-gap: 13px;
   }
 
@@ -58,6 +57,10 @@
 .advantages li {
   text-align: center;
   padding: 0 20px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .advantages span {

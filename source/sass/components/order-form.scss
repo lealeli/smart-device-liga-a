@@ -1,5 +1,5 @@
 .order-form {
-  margin: 326px 0 0 0;
+  margin: 323px 0 0 0;
   width: 38%;
 
   @media (max-width: $tablet-width) {
@@ -36,6 +36,24 @@
   }
 }
 
+.order-form input[placeholder] {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: $special-gray-light-transparency5;
+  padding: 14px 0 10px 29px;
+
+  @media (max-width: $tablet-width) {
+    padding: 12px 0 12px 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 12px 0 12px 25px;
+  }
+}
+
 .order-form input {
   width: 327px;
   background: $basic-white;
@@ -56,28 +74,15 @@
 
   &:focus {
     background-color: $basic-white;
+    color: $basic-black;
+  }
+
+  &::placeholder {
+
   }
 
   @media (max-width: $tablet-width) {
     width: 100%;
-  }
-}
-
-.order-form input[placeholder] {
-  font-family: $font-family;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
-  color: $special-gray-light-transparency5;
-  padding: 14px 0 10px 29px;
-
-  @media (max-width: $tablet-width) {
-    padding: 12px 0 12px 20px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 12px 0 12px 25px;
   }
 }
 

@@ -1,16 +1,26 @@
 .page-footer {
-  padding: 31px 0 97px;
+  width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.page-footer__wrapper {
+  max-width: 957px;
+  padding: 31px 0 77px 0;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   @media (max-width: $tablet-width) {
     padding: 12px 0 55px;
+    max-width: 698px;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     align-items: center;
     padding: 24px 0 30px;
+    max-width: 320px;
   }
 }
 
@@ -24,13 +34,15 @@
   align-items: center;
   color: $basic-black-transparency5;
   text-decoration: none;
+  margin-bottom: 20px;
 
   &--email {
-    padding: 0 90px 0 10px;
+    margin-right: 90px;
+    margin-left: 10px;
   }
 
   &--tel {
-    padding: 0 26px 0 0;
+    margin-right: 26px;
   }
 
   &:hover {
@@ -42,14 +54,15 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0 0 22px 0;
+    margin-bottom: 22px;
 
     &--email {
-      padding: 0 0 22px 7px;
+      margin-left: 7px;
+      margin-right: 0;
     }
 
     &--tel {
-      padding: 0 11px 0 0;
+      margin-right: 11px;
     }
   }
 }

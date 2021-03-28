@@ -9,6 +9,7 @@ function clickMenu() {
 }
 
 if (menu && subMenu) {
+  menu.classList.remove('main-nav__toggle--nojs');
   subMenu.classList.remove('main-nav__list--nojs');
   menu.addEventListener('click', clickMenu);
   clickMenu();

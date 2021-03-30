@@ -16,7 +16,7 @@
 .main-nav__list {
   list-style: none;
   padding: 17px 23px 9px 19px;
-  margin: 0;
+  margin: 0 -10px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -26,6 +26,7 @@
     background: $basic-white;
     padding: 100px 0 108px 0;
     position: fixed;
+    margin: 0;
     top: 0;
     left: 0;
     z-index: 100;
@@ -45,12 +46,13 @@
 
 .main-nav__item {
   position: relative;
+  margin: 0 10px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
     padding: 12px 0 14px 16px;
     background-color: $special-gray-middle;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
 
     &::after {
       content: "";

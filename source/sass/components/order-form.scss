@@ -36,22 +36,13 @@
   }
 }
 
-.order-form input[placeholder] {
+.order-form input::placeholder {
   font-family: $font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: $special-gray-light-transparency5;
-  padding: 14px 0 10px 29px;
-
-  @media (max-width: $tablet-width) {
-    padding: 12px 0 12px 20px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 12px 0 12px 25px;
-  }
 }
 
 .order-form input {
@@ -67,6 +58,7 @@
   font-size: 15px;
   line-height: 24px;
   color: $basic-black;
+  padding: 14px 0 10px 29px;
 
   &:hover {
     background-color: $special-gray-light;
@@ -77,12 +69,13 @@
     color: $basic-black;
   }
 
-  &::placeholder {
-
-  }
-
   @media (max-width: $tablet-width) {
     width: 100%;
+    padding: 12px 0 12px 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 12px 0 12px 25px;
   }
 }
 

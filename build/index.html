@@ -8,7 +8,7 @@
   <link as="font" href="fonts/pt-mono-400.woff2" rel="preload">
   <link as="font" href="fonts/roboto-condensed-400.woff2" rel="preload">
   <link as="font" href="fonts/roboto-condensed-700.woff2" rel="preload">
-  <title>Магазин велосипедов Moon</title>
+  <title>Компания Smart Device</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
@@ -22,13 +22,13 @@
     </a>
     <nav class="main-nav">
       <a class="main-nav__link" href="mailto:info@sd.ru">
-        <svg class="main-nav__link-icon" width="27" height="34">
+        <svg class="main-nav__link-icon main-nav__link-icon--email" width="19" height="14">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-email"></use>
         </svg>
         <span class="main-nav__link-text">info@sd.ru</span>
       </a>
       <a class="main-nav__link" href="tel:+7495000525">
-        <svg class="main-nav__link-icon" width="27" height="34">
+        <svg class="main-nav__link-icon main-nav__link-icon--tel" width="18" height="18">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-phone"></use>
         </svg>
         <span class="main-nav__link-text">+7 (495) 000 52 52</span>
@@ -40,14 +40,15 @@
 <main>
   <section class="main-banner">
     <div class="main-banner__wrapper">
-      <div class="main-banner__wrap">
-        <div class="main-banner__info">
-          <h1>Печатные платы</h1>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#">Получить бесплатную консультацию</a>
-        </div>
-        <a class="main-banner__scroll">Скролл вниз</a>
+      <div class="main-banner__info">
+        <h1>Печатные платы</h1>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="main-banner__info-link main-banner__info-link--desktop" href="#">Получить бесплатную консультацию</a>
+        <a class="main-banner__info-link main-banner__info-link--mobile" href="#">Бесплатная консультация</a>
+        <!-- 1х: 705px; 2x: 1410px -->
+        <img alt="Производство печатных плат" height="515" width="705" src="img/background-board@1x.png" srcset="img/background-board@2x.png 2x">
       </div>
+      <a href="#" class="main-banner__scroll">Скролл вниз</a>
     </div>
   </section>
   <section class="about">

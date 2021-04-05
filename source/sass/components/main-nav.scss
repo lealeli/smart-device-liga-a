@@ -1,128 +1,116 @@
 .main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 64px;
-  border-bottom: 1px solid $basic-black-transparency2;
-  justify-content: center;
-  width: 100%;
   position: absolute;
-
-  @media (max-width: $tablet-width) {
-    padding: 0;
-    position: relative;
-  }
-}
-
-.main-nav__list {
-  list-style: none;
-  padding: 17px 23px 9px 19px;
-  margin: 0 -10px;
+  top: 36px;
+  right: 30px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  width: 70%;
 
   @media (max-width: $tablet-width) {
-    background: $basic-white;
-    padding: 100px 0 108px 0;
-    position: fixed;
-    margin: 0;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    height: 100%;
-    align-content: flex-start;
-    overflow: scroll;
-
-    &--nojs {
-      position: relative;
-    }
-
-    &--close {
-      display: none;
-    }
+    top: 22px;
+    right: 24px;
   }
-}
 
-.main-nav__item {
-  position: relative;
-  margin: 0 10px;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    padding: 12px 0 14px 16px;
-    background-color: $special-gray-middle;
-    margin: 0 0 30px 0;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 8px;
-      height: 12px;
-      top: 23px;
-      right: 24px;
-      position: absolute;
-      background: url("../img/icon-arrow-right.svg") $special-gray-middle center center no-repeat;
-      background-size: 8px 12px;
-    }
+  @media (max-width: $mobile-width) {
+    top: 12px;
+    right: 15px;
   }
 }
 
 .main-nav__link {
-  font-family: $font-family;
+  font-family: $font-family-text;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: -0.005em;
+  line-height: 18px;
   color: $basic-white;
-  opacity: 0.7;
   text-decoration: none;
+  margin: 10px 47px 10px 41px;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    margin: 10px 0 10px 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 10px 0 10px 23px;
+  }
 
   &:hover {
-    opacity: 1;
+    color: $special-blue;
   }
 
   &:focus {
-    opacity: 0.3;
-  }
-
-  @media (max-width: $tablet-width) {
-    color: $special-gray-dark;
-    font-size: 20px;
-    line-height: 140%;
-    font-weight: 400;
-    letter-spacing: 0;
+    color: $special-blue;
+    opacity: 0.6;
   }
 }
 
-.main-nav__toggle {
-  display: none;
+.main-nav__link-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__link-icon {
+  fill: $special-blue;
+  vertical-align: middle;
+  padding-right: 8px;
 
   @media (max-width: $tablet-width) {
-    display: block;
+    height: auto;
+    padding-right: 0;
+  }
+
+  &--email {
+    @media (max-width: $tablet-width) {
+      width: 1.6em;
+    }
+  }
+
+  &--tel {
+    @media (max-width: $tablet-width) {
+      width: 1.5em;
+    }
+  }
+}
+
+.main-nav__button {
+  width: 180px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px $basic-white solid;
+  box-sizing: border-box;
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $special-blue;
     border: none;
-    background: url("../img/icon-close.svg") $basic-white center center no-repeat;
-    background-size: 24px 25px;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    right: 0;
-    z-index: 200;
-    position: fixed;
+  }
 
-    &--open {
-      background: url("../img/icon-menu.svg") $special-green center center no-repeat;
-      position: absolute;
-    }
-
-    &--nojs {
-      display: none;
-    }
-
-    @media (max-width: $mobile-width) {
-      width: 50px;
-    }
+  &:focus {
+    background-color: $special-blue;
+    border: none;
+    opacity: 0.6;
   }
 }

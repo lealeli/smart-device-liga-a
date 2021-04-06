@@ -1,0 +1,120 @@
+.about {
+  width: 100%;
+  position: relative;
+  background: url("../img/background-advantages@1x.png") center center no-repeat;
+  background-size: cover;
+  padding: 109px 0 110px 0;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/background-advantages@2x.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 54px 0 59px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 37px 0 60px 0;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 14px 0 14px;
+  }
+}
+
+.about__wrapper ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 0 14px;
+  }
+}
+
+.about__wrapper li {
+  border: 1px $special-gray-light-half solid;
+  border-left: 3px $special-blue solid;
+  background-color: $basic-white;
+  padding: 40px 42px 49px 45px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $special-blue;
+    border-color: $special-blue;
+  }
+
+  &:hover svg {
+    fill: $basic-white;
+  }
+
+  &:hover h3 {
+    color: $basic-white;
+  }
+
+  &:hover p {
+    color: $basic-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 24px 21px 31px 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 25px 17px 38px 27px;
+  }
+}
+
+.about__wrapper svg {
+  fill: $special-blue;
+  padding-bottom: 23px;
+}
+
+.about__wrapper h3 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $special-blue;
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+}
+
+.about__wrapper p {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-gray;
+}

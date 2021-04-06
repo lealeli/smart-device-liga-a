@@ -118,3 +118,77 @@
   line-height: 22px;
   color: $special-gray;
 }
+
+.about__company {
+  background: url("../img/2005@1x.png");
+  background-size: contain;
+  padding-left: 200px;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/2005@2x.png") left center no-repeat;
+    background-size: contain;
+  }
+
+  @media (max-width: $mobile-width) {
+    background: none;
+    padding-left: 0;
+  }
+}
+
+.about__company h2 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $special-gray;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}
+
+.about__company p {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-gray;
+}
+
+.about__company a {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $special-blue;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px $special-blue solid;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+    background: $special-blue;
+    color: $basic-white;
+  }
+
+  &:focus {
+    background: $special-blue-half;
+    border: 1px $special-blue-half solid;
+  }
+}

@@ -99,7 +99,7 @@
           <picture>
             <source srcset="img/photo-services-1@1x.webp 1x, img/photo-services-1@2x.webp 2x" type="image/webp">
             <!-- 1х: 720px; 2x: 1440px -->
-            <img alt="Производство печатных плат" height="408" width="720" src="img/photo-services-1@1x.png" srcset="img/photo-services-1@2x.jpg 2x">
+            <img alt="Производство печатных плат" height="408" width="720" src="img/photo-services-1@1x.png" srcset="img/photo-services-1@2x.png 2x">
           </picture>
 
         </a>
@@ -172,6 +172,9 @@
     </section>
     <section class="footer-nav">
       <h2 class="footer-nav__header">Разделы сайта</h2>
+
+      <input class="toggle-footer" type="checkbox" id="hd-1"/>
+      <label for="hd-1"><span class="visually-hidden">Показать или скрыть меню</span></label>
       <ul class="footer-nav__list">
         <li class="footer-nav__item">
           <a href="#" class="footer-nav__link">О компании</a>
@@ -198,6 +201,9 @@
     </section>
     <section class="page-footer__contact">
       <h2 class="page-footer__contact-header">Наш офис</h2>
+
+      <input class="toggle-footer" type="checkbox" id="hd-2"/>
+      <label for="hd-2"><span class="visually-hidden">Показать или скрыть меню</span></label>
       <div class="page-footer__contact-wrap">
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <a href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -208,10 +214,12 @@
   </div>
   <div class="page-footer__confidentiality-wrap">
     <section class="page-footer__confidentiality">
-      <p class="page-footer__confidentiality-law">Все права защищены</p>
-      <p class="page-footer__confidentiality-years">1999-2018 SD Service Devices</p>
-      <a href="#" class="page-footer__confidentiality-conditions">Условия конфиденциальности</a>
-      <a href="#" class="page-footer__confidentiality-developed">Developed by wow studio</a>
+      <div class="page-footer__confidentiality-wrapper">
+        <p class="page-footer__confidentiality-law">Все права защищены</p>
+        <p class="page-footer__confidentiality-years">1999-2018 SD Service Devices</p>
+        <a href="#" class="page-footer__confidentiality-conditions">Условия конфиденциальности</a>
+        <a href="#" class="page-footer__confidentiality-developed">Developed by wow studio</a>
+      </div>
     </section>
   </div>
 </footer>

@@ -1,5 +1,16 @@
 .footer-nav {
-  width: 41%;
+  width: 40.5%;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    width: calc(50% - 25px);
+    padding-left: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    border-bottom: 1px solid $special-gray-medium;
+  }
 }
 
 .footer-nav__header {
@@ -11,7 +22,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $special-blue-dark;
-  margin: 0 0 29px 0;
+  margin: 0 0 25px 0;
   padding: 0;
 }
 
@@ -20,10 +31,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.footer-nav__item {
-  width: 308px;
+  @media (max-width: $tablet-width) {
+    column-count: 1;
+  }
 }
 
 .footer-nav__link {

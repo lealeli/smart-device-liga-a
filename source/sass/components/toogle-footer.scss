@@ -1,0 +1,41 @@
+.toggle-footer {
+  display: none;
+}
+
+.toggle-footer + label ~ .footer-nav__list,
+.toggle-footer + label ~ .page-footer__contact-wrap {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.toggle-footer + label {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 20px;
+    right: 17px;
+    display: block;
+    background: url("../img/plus.svg") center center no-repeat;
+  }
+}
+
+.toggle-footer:checked + label {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 20px;
+  right: 17px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: url("../img/minus.svg") center center no-repeat;
+}
+
+.toggle-footer:checked + label ~ .footer-nav__list,
+.toggle-footer:checked + label ~ .page-footer__contact-wrap {
+  display: block;
+}

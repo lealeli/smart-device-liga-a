@@ -20,7 +20,22 @@
 }
 
 .page-footer__info {
+  padding-left: 30px;
   width: 25%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $special-gray-medium;
+    padding-left: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
 }
 
 .page-footer__logo {
@@ -42,6 +57,14 @@
   display: flex;
   width: 112px;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .page-footer__social-item {
@@ -62,7 +85,19 @@
 }
 
 .page-footer__contact {
-  width: 26.5%;
+  padding-right: 15px;
+  width: 23.5%;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    width: calc(50% - 25px);
+    padding-right: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0 25px;
+  }
 }
 
 .page-footer__contact-header {
@@ -120,6 +155,7 @@
 .page-footer__confidentiality {
   max-width: 1471px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   position: relative;
@@ -133,11 +169,86 @@
   text-transform: uppercase;
   color: $special-blue-dark;
   opacity: 0.5;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
-.page-footer__confidentiality-conditions, .page-footer__confidentiality-developed {
+.page-footer__confidentiality-wrapper {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.page-footer__confidentiality-law {
+  width: 13%;
+  padding-right: 3%;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-footer__confidentiality-years {
+  width: 23.5%;
+  padding-right: 3%;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-footer__confidentiality-conditions {
+  width: 23.5%;
+  padding-right: 3%;
   color: $special-blue-dark;
   text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    width: calc(50% - 25px);
+    padding-left: 25px;
+    padding-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  &:hover {
+    color: $special-blue;
+  }
+
+  &:focus {
+    color: $special-blue-half;
+  }
+}
+
+.page-footer__confidentiality-developed {
+  width: 31%;
+  text-align: end;
+  color: $special-blue-dark;
+  text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    width: calc(50% - 25px);
+    padding-right: 25px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
 
   &:hover {
     color: $special-blue;

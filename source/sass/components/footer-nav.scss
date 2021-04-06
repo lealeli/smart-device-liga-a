@@ -1,0 +1,47 @@
+.footer-nav {
+  width: 41%;
+}
+
+.footer-nav__header {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $special-blue-dark;
+  margin: 0 0 29px 0;
+  padding: 0;
+}
+
+.footer-nav__list {
+  column-count: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav__item {
+  width: 308px;
+}
+
+.footer-nav__link {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $special-blue-dark;
+  opacity: 0.5;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    color: $special-blue;
+  }
+
+  &:focus {
+    color: $special-blue-half;
+  }
+}

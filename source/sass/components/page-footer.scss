@@ -1,0 +1,149 @@
+.page-footer {
+  width: 100%;
+  position: relative;
+  padding-top: 65px;
+}
+
+.page-footer__wrapper {
+  position: relative;
+  max-width: 1471px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  z-index: 100;
+  padding-bottom: 55px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.page-footer__info {
+  width: 25%;
+}
+
+.page-footer__logo {
+  width: 216px;
+  height: 52px;
+  margin-bottom: 54px;
+  display: block;
+}
+
+.page-footer__years {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-footer__social-list {
+  display: flex;
+  width: 112px;
+  justify-content: space-between;
+}
+
+.page-footer__social-item {
+  width: 26px;
+  height: 26px;
+}
+
+.page-footer__social-item svg {
+  fill: $special-gray-light;
+}
+
+.page-footer__social-item:hover svg {
+  fill: $special-blue;
+}
+
+.page-footer__social-item:focus svg {
+  fill: $special-blue-half;
+}
+
+.page-footer__contact {
+  width: 26.5%;
+}
+
+.page-footer__contact-header {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $special-blue-dark;
+  margin: 0 0 29px 0;
+  padding: 0;
+}
+
+.page-footer__contact-wrap p {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+  color: $special-blue-dark;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.page-footer__contact-wrap a {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $special-blue-dark;
+  opacity: 0.5;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    color: $special-blue;
+  }
+
+  &:focus {
+    color: $special-blue-half;
+  }
+}
+
+.page-footer__confidentiality-wrap {
+  width: 100%;
+  border-top: 1px solid $special-gray-medium;
+}
+
+.page-footer__confidentiality {
+  max-width: 1471px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $special-blue-dark;
+  opacity: 0.5;
+}
+
+.page-footer__confidentiality-conditions, .page-footer__confidentiality-developed {
+  color: $special-blue-dark;
+  text-decoration: none;
+
+  &:hover {
+    color: $special-blue;
+  }
+
+  &:focus {
+    color: $special-blue-half;
+  }
+}

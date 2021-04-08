@@ -11,7 +11,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 54px 0 59px 0;
+    padding: 54px 0 80px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -30,7 +30,7 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding: 0 25px;
+    padding: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -38,7 +38,7 @@
   }
 }
 
-.about__wrapper ul {
+.about__list {
   display: grid;
   grid-template-columns: 49% 49%;
   grid-template-rows: auto auto;
@@ -48,6 +48,11 @@
   list-style: none;
   padding: 0;
 
+  @media (max-width: $tablet-width) {
+    margin: 0 25px;
+    grid-template-columns: 48% 48%;
+  }
+
   @media (max-width: $mobile-width) {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
@@ -56,7 +61,7 @@
   }
 }
 
-.about__wrapper li {
+.about__item {
   border: 1px $special-gray-light-half solid;
   border-left: 3px $special-blue solid;
   background-color: $basic-white;
@@ -83,7 +88,28 @@
   }
 
   @media (max-width: $tablet-width) {
-    padding: 24px 21px 31px 27px;
+    padding: 22px 21px 19px 24px;
+    min-height: 232px;
+
+    &--stopwatch svg {
+      width: 29px;
+      height: 36px;
+    }
+
+    &--hired svg {
+      width: 29px;
+      height: 36px;
+    }
+
+    &--detective svg {
+      width: 30px;
+      height: 26px;
+    }
+
+    &--tag svg {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -91,12 +117,18 @@
   }
 }
 
-.about__wrapper svg {
+.about__item svg {
   fill: $special-blue;
   padding-bottom: 14px;
+
+  @media (max-width: $tablet-width) {
+    width: 31px;
+    height: 36px;
+    padding-bottom: 2px;
+  }
 }
 
-.about__wrapper h3 {
+.about__item h3 {
   font-family: $font-family-header;
   font-style: normal;
   font-weight: 400;
@@ -105,13 +137,17 @@
   color: $special-blue;
   margin: 0 0 16px 0;
 
+  @media (max-width: $tablet-width) {
+    margin: 0 0 8px 0;
+  }
+
   @media (max-width: $mobile-width) {
     font-size: 20px;
     line-height: 140.62%;
   }
 }
 
-.about__wrapper p {
+.about__item p {
   font-family: $font-family-text;
   font-style: normal;
   font-weight: 400;
@@ -123,18 +159,46 @@
 
 .about__company {
   background: url("../img/2005@1x.png") left bottom no-repeat;
-  background-size: 118px 303px;
+  background-size: auto 306px;
   padding: 108px 0 0 180px;
   margin: 0 33px;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/2005@2x.png") left bottom no-repeat;
-    background-size: contain;
+    background-size: auto 306px;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-size: auto 346px;
+    margin: 0 30px 0 30px;
+    padding: 57px 0 0 180px;
   }
 
   @media (max-width: $mobile-width) {
     background: none;
     padding-left: 0;
+  }
+}
+
+.about__company-text {
+  @media (max-width: $tablet-width) {
+    position: relative;
+    overflow: hidden;
+    height: 194px;
+    width: 525px;
+    padding-left: 4px;
+
+    &::after {
+      content: "..";
+      font-family: $font-family-text;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      position: absolute;
+      right: -2px;
+      bottom: -2px;
+    }
   }
 }
 
@@ -150,6 +214,7 @@
   @media (max-width: $tablet-width) {
     font-size: 32px;
     line-height: 140.62%;
+    margin: 0 0 26px 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -166,6 +231,11 @@
   line-height: 22px;
   color: $special-gray;
   padding: 0 0 21px 0;
+  margin: 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 20px 0;
+  }
 }
 
 .about__company a {
@@ -196,5 +266,9 @@
   &:focus {
     background: $special-blue-half;
     border: 1px $special-blue-half solid;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 43px 3px 0 0;
   }
 }

@@ -4,6 +4,10 @@
   background: url("../img/background-form-triangle.svg") 101% 35px no-repeat,
   url("../img/background-double-triangle.svg") $special-blue 15% 51% no-repeat;
   background-size: 364px 670px, 611px 487px;
+
+  @media (max-width: $tablet-width) {
+    background: $special-blue;
+  }
 }
 
 .feedback__wrapper {
@@ -18,6 +22,8 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    justify-content: center;
+    padding: 54px 0 103px;
   }
 }
 
@@ -27,11 +33,20 @@
   height: 288px;
   top: 161px;
   left: 8px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .feedback__form {
   width: 574px;
   margin: 0 28px 0 1px;
+
+  @media (max-width: $tablet-width) {
+    width: 600px;
+    margin: 0;
+  }
 }
 
 .feedback__form h2 {
@@ -46,6 +61,7 @@
   @media (max-width: $tablet-width) {
     font-size: 32px;
     line-height: 140.62%;
+    margin: 27px 0 15px;
   }
 
   @media (max-width: $mobile-width) {
@@ -63,6 +79,10 @@
   color: $basic-white;
   margin: 0;
   padding: 0 0 50px 5px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 56px 7px;
+  }
 }
 
 .feedback__form form {
@@ -85,6 +105,11 @@
   background: $basic-white-transparency1;
   margin-bottom: 42px;
   border: none;
+
+  @media (max-width: $tablet-width) {
+    width: 265px;
+    height: 51px;
+  }
 
   &:hover {
     background: $basic-white-transparency4;
@@ -118,6 +143,11 @@
   border: none;
   background: $basic-white-transparency1;
   resize: none;
+
+  @media (max-width: $tablet-width) {
+    width: 578px;
+    margin: 0 0 44px 0;
+  }
 
   &:hover {
     background: $basic-white-transparency4;
@@ -165,7 +195,7 @@
     height: 47px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     width: 100%;
     height: 47px;
   }
@@ -185,6 +215,10 @@
 .feedback__form-personal {
   width: 261px;
   padding: 5px 0 0 0;
+
+  @media (max-width: $tablet-width) {
+    width: 275px;
+  }
 }
 
 .feedback__form-personal input {

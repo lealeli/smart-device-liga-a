@@ -37,21 +37,21 @@
     </nav>
   </div>
 </header>
-<main>
+<main class="page-main">
   <section class="main-banner">
     <div class="main-banner__wrapper">
       <div class="main-banner__info">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="main-banner__info-link main-banner__info-link--desktop" href="#">Получить бесплатную консультацию</a>
-        <a class="main-banner__info-link main-banner__info-link--mobile" href="#">Бесплатная консультация</a>
+        <a class="main-banner__info-link main-banner__info-link--desktop" href="#callback">Получить бесплатную консультацию</a>
+        <a class="main-banner__info-link main-banner__info-link--mobile" href="#callback">Бесплатная консультация</a>
         <!-- 1х: 705px; 2x: 1410px -->
         <img alt="Производство печатных плат" height="515" width="705" src="img/background-board@1x.png" srcset="img/background-board@2x.png 2x">
       </div>
-      <a href="#" class="main-banner__scroll">Скролл вниз</a>
+      <a href="#about" class="main-banner__scroll">Скролл вниз</a>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div  class="about__wrapper">
       <ul>
         <li>
@@ -62,21 +62,21 @@
           <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li>
-          <svg width="27" height="34">
+          <svg width="35" height="35">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-hired"></use>
           </svg>
           <h3>Крупные поставщики</h3>
           <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
         <li>
-          <svg width="27" height="34">
+          <svg width="36" height="31">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-detective"></use>
           </svg>
           <h3>Полная конфиденциальность</h3>
           <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li>
-          <svg width="27" height="34">
+          <svg width="35" height="35">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-tag"></use>
           </svg>
           <h3>Персонализация стоимости</h3>
@@ -124,11 +124,16 @@
       </div>
     </div>
   </section>
-  <section class="feedback">
+  <section class="feedback" id="callback">
     <div class="feedback__wrapper">
-      <h2>Остались вопросы? Задайте их нам!</h2>
-      <p>Мы проконсультируем Вас бесплатно</p>
+      <picture>
+        <source srcset="img/airplane@1x.webp 1x, img/airplane@2x.webp 2x" type="image/webp">
+        <!-- 1х: 720px; 2x: 1440px -->
+        <img alt="Комплектующие для светотехники" height="288" width="511" src="img/airplane@1x.png" srcset="img/airplane@2x.png 2x">
+      </picture>
       <div class="feedback__form">
+        <h2>Остались вопросы? Задайте их нам!</h2>
+        <p>Мы проконсультируем Вас бесплатно</p>
         <form>
           <label>
             <input type="text" placeholder="Имя" name="name" required>
@@ -142,8 +147,10 @@
 
           <button type="submit">Задать вопрос</button>
 
-          <input type="checkbox" id="personal" name="personal">
-          <label for="personal">Я согласен на обработку  персональных данных</label>
+          <div class="feedback__form-personal">
+            <input type="checkbox" id="personal" name="personal">
+            <label for="personal">Я согласен на обработку  персональных данных</label>
+          </div>
         </form>
       </div>
     </div>

@@ -41,7 +41,7 @@
 .page-footer__logo {
   width: 216px;
   height: 52px;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
   display: block;
 }
 
@@ -85,8 +85,8 @@
 }
 
 .page-footer__contact {
-  padding-right: 15px;
-  width: 23.5%;
+  padding-right: 8px;
+  width: 24%;
   position: relative;
 
   @media (max-width: $tablet-width) {
@@ -109,7 +109,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $special-blue-dark;
-  margin: 0 0 29px 0;
+  margin: 0 0 26px 0;
   padding: 0;
 }
 
@@ -176,11 +176,11 @@
 }
 
 .page-footer__confidentiality-wrapper {
-  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  padding: 15px 30px 8px 30px;
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -190,6 +190,7 @@
 .page-footer__confidentiality-law {
   width: 13%;
   padding-right: 3%;
+  margin: 0;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -199,6 +200,7 @@
 .page-footer__confidentiality-years {
   width: 23.5%;
   padding-right: 3%;
+  margin: 0;
 
   @media (max-width: $tablet-width) {
     display: none;

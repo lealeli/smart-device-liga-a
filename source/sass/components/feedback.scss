@@ -37,6 +37,7 @@
   height: 288px;
   top: 161px;
   left: 8px;
+  z-index: 10;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -46,6 +47,8 @@
 .feedback__form {
   width: 574px;
   margin: 0 28px 0 1px;
+  background: $special-blue;
+  z-index: 100;
 
   @media (max-width: $tablet-width) {
     width: 600px;

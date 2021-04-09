@@ -15,7 +15,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 37px 0 60px 0;
+    padding: 37px 0 64px;
   }
 }
 
@@ -34,7 +34,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0 14px 0 14px;
+    margin: 0 14px 0 14px;
+    width: auto;
   }
 }
 
@@ -57,7 +58,8 @@
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     grid-gap: 20px;
-    padding: 0 14px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -113,7 +115,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 25px 17px 38px 27px;
+    padding: 23px 15px 25px 24px;
   }
 }
 
@@ -125,6 +127,10 @@
     width: 31px;
     height: 36px;
     padding-bottom: 2px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 4px;
   }
 }
 
@@ -144,6 +150,7 @@
   @media (max-width: $mobile-width) {
     font-size: 20px;
     line-height: 140.62%;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -177,27 +184,22 @@
   @media (max-width: $mobile-width) {
     background: none;
     padding-left: 0;
+    margin: 0;
   }
 }
 
 .about__company-text {
-  @media (max-width: $tablet-width) {
-    position: relative;
-    overflow: hidden;
-    height: 194px;
-    width: 525px;
-    padding-left: 4px;
+  &--desktop {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
 
-    &::after {
-      content: "..";
-      font-family: $font-family-text;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      position: absolute;
-      right: -2px;
-      bottom: -2px;
+  &--tablet {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
     }
   }
 }
@@ -220,6 +222,7 @@
   @media (max-width: $mobile-width) {
     font-size: 28px;
     line-height: 140.62%;
+    margin: 0 0 20px 0;
   }
 }
 
@@ -235,6 +238,16 @@
 
   @media (max-width: $tablet-width) {
     padding: 0 0 20px 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 0 39px 3px;
+  }
+}
+
+.about__company-text p {
+  @media (max-width: $mobile-width) {
+    padding: 0 0 20px 3px;
   }
 }
 
@@ -270,5 +283,9 @@
 
   @media (max-width: $tablet-width) {
     margin: 43px 3px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 9px 3px 0 3px;
   }
 }

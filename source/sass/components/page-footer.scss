@@ -6,6 +6,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 19px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 45px;
+  }
 }
 
 .page-footer__wrapper {
@@ -21,6 +25,10 @@
   @media (max-width: $tablet-width) {
     width: 100%;
     padding-bottom: 36px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 26px;
   }
 }
 
@@ -52,6 +60,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 25px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
 }
 
 .page-footer__years {
@@ -69,6 +81,10 @@
     color: $special-blue-dark;
     margin: 16px 0 0 16px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 16px 0 0 0;
+  }
 }
 
 .page-footer__social-list {
@@ -81,7 +97,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 0;
+    padding: 28px 0 58px 0;
   }
 }
 
@@ -115,7 +131,8 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding: 0 25px;
+    padding: 0 17px;
+    margin-top: 30px;
   }
 }
 
@@ -130,6 +147,10 @@
   color: $special-blue-dark;
   margin: 0 0 26px 0;
   padding: 0;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 32px;
+  }
 }
 
 .page-footer__contact-wrap p {
@@ -204,6 +225,9 @@
   @media (max-width: $tablet-width) {
     padding: 20px 0;
   }
+  @media (max-width: $tablet-width) {
+    padding: 27px 0;
+  }
 }
 
 .page-footer__confidentiality-law {
@@ -242,6 +266,7 @@
     width: 100%;
     padding: 0;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   &:hover {

@@ -2,7 +2,7 @@
   width: 100%;
   position: relative;
   background: url("../img/background-form-triangle.svg") 101% 35px no-repeat,
-  url("../img/background-double-triangle.svg") $special-blue 15% 51% no-repeat;
+    url("../img/background-double-triangle.svg") $special-blue 15% 51% no-repeat;
   background-size: 364px 670px, 611px 487px;
 
   @media (max-width: $tablet-width) {

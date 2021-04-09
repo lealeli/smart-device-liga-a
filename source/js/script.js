@@ -1,5 +1,6 @@
 'use strict';
 
+/* global IMask */
 (function () {
   var buttonCallback = document.querySelector('.main-nav__button');
   var modal = document.querySelector('.modal');
@@ -12,7 +13,7 @@
     return;
   }
 
-  var phoneMask = IMask(telInput, {
+  var phoneMask = new IMask(telInput, {
     mask: '+{7}(000)000-00-00',
   });
 
@@ -62,4 +63,19 @@
 
     form.reset();
   });
+
+  var smoothLinks = document.querySelectorAll('.main-banner__info-link--desktop, .main-banner__scroll');
+  smoothLinks.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      var id = el.getAttribute('href');
+
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+
+
 })();

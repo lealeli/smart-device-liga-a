@@ -1,12 +1,12 @@
 .about {
   width: 100%;
   position: relative;
-  background: url(../img/background-advantages@1x.png) -1px -23px no-repeat;
+  background: url("../img/background-advantages@1x.png") -1px -23px no-repeat;
   background-size: cover;
   padding: 110px 0 100px;
 
   @media (min-resolution: 2dppx) {
-    background: url(../img/background-advantages@1x.png) -1px -23px no-repeat;
+    background: url("../img/background-advantages@1x.png") -1px -23px no-repeat;
     background-size: cover;
   }
 

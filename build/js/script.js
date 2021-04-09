@@ -1,16 +1,12 @@
 'use strict';
 
-var menu = document.querySelector('.main-nav__toggle');
-var subMenu = document.querySelector('.main-nav__list');
+(function () {
+  var buttonCallback = document.querySelector('.main-nav__button');
+  var modal = document.querySelector('.modal');
 
-function clickMenu() {
-  menu.classList.toggle('main-nav__toggle--open');
-  subMenu.classList.toggle('main-nav__list--close');
-}
+  buttonCallback.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modal.classList.add('modal--open');
+  });
 
-if (menu && subMenu) {
-  menu.classList.remove('main-nav__toggle--nojs');
-  subMenu.classList.remove('main-nav__list--nojs');
-  menu.addEventListener('click', clickMenu);
-  clickMenu();
-}
+})();

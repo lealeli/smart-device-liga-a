@@ -27,6 +27,7 @@
 
   var closeModal = function () {
     modal.classList.remove('modal--open');
+    document.body.style.overflowY = '';
   };
 
   window.addEventListener('keydown', function (e) {
@@ -47,7 +48,7 @@
     e.preventDefault();
     modal.classList.add('modal--open');
     nameInput.focus();
-
+    document.body.style.overflowY = 'hidden';
   });
 
   modal.addEventListener('click', function (e) {

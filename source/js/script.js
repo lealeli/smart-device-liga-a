@@ -97,5 +97,22 @@
     });
   });
 
+  var toggleFooter = document.querySelectorAll('.toggle-footer');
+  toggleFooter.forEach(function (el, idx) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      toggleFooter.forEach(function (el2, idx2) {
+        if (idx === idx2) {
+          el2.classList.toggle('toggle-footer--open');
+        } else {
+          el2.classList.remove('toggle-footer--open');
+        }
+      });
+    });
+
+    el.classList.remove('toggle-footer--open');
+  });
+
 
 })();

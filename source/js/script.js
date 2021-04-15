@@ -9,13 +9,21 @@
   var nameInput = form.querySelector('[name=\'name\']');
   var telInput = form.querySelector('[name=\'tel\']');
 
-  if (!buttonCallback || !modal || !form || !nameInput || !telInput) {
+  var feedbackForm = document.querySelector('.feedback__form form');
+  var feedbackTelInput = feedbackForm.querySelector('[name=\'tel\']');
+
+  if (!buttonCallback || !modal || !form || !nameInput || !telInput || !feedbackForm || !feedbackTelInput) {
     return;
   }
 
   var phoneMask = new IMask(telInput, {
     mask: '+{7}(000)000-00-00',
   });
+
+  var feedbackPhoneMask = new IMask(feedbackTelInput, {
+    mask: '+{7}(000)000-00-00',
+  });
+
 
   var closeModal = function () {
     modal.classList.remove('modal--open');
@@ -29,6 +37,10 @@
 
   telInput.addEventListener('focus', function () {
     phoneMask.updateOptions({lazy: false});
+  });
+
+  feedbackTelInput.addEventListener('focus', function () {
+    feedbackPhoneMask.updateOptions({lazy: false});
   });
 
   buttonCallback.addEventListener('click', function (e) {
@@ -49,6 +61,14 @@
       telInput.setCustomValidity('Введите валидный телефон');
     } else {
       telInput.setCustomValidity('');
+    }
+  });
+
+  feedbackPhoneMask.on('accept', function () {
+    if (feedbackPhoneMask.unmaskedValue.length !== 11) {
+      feedbackTelInput.setCustomValidity('Введите валидный телефон');
+    } else {
+      feedbackTelInput.setCustomValidity('');
     }
   });
 

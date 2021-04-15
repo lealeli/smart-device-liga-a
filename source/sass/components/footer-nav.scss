@@ -38,6 +38,10 @@
   @media (max-width: $tablet-width) {
     column-count: 1;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .footer-nav__link {
@@ -50,6 +54,7 @@
   opacity: 0.5;
   text-decoration: none;
   display: block;
+  width: fit-content;
 
   &:hover {
     color: $special-blue;

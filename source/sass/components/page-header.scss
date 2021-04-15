@@ -45,3 +45,44 @@
     opacity: 0.3;
   }
 }
+
+.page-header__button {
+  width: 180px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px $basic-white solid;
+  box-sizing: border-box;
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 35px;
+  right: 29px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $special-blue;
+    border: none;
+  }
+
+  &:focus {
+    background-color: $special-blue;
+    border: none;
+    opacity: 0.6;
+  }
+}

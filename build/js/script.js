@@ -2,7 +2,7 @@
 
 /* global IMask */
 (function () {
-  var buttonCallback = document.querySelector('.main-nav__button');
+  var buttonCallback = document.querySelector('.page-header__button');
   var modal = document.querySelector('.modal');
   var modalClose = document.querySelector('.modal__close');
   var form = modal.querySelector('form');

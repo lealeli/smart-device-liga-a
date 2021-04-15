@@ -33,8 +33,8 @@
         </svg>
         <span class="main-nav__link-text">+7 (495) 000 52 52</span>
       </a>
-      <a class="main-nav__button" href="callback.html">Заказать звонок</a>
     </nav>
+    <a class="page-header__button" href="callback.html">Заказать звонок</a>
   </div>
 </header>
 <main class="page-main">
@@ -68,7 +68,7 @@
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-hired"></use>
           </svg>
           <h3>Крупные поставщики</h3>
-          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC REFOND.
+          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
             Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
         <li class="about__item about__item--detective">
@@ -149,16 +149,21 @@
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
         <form>
-          <label>
-            <input type="text" placeholder="Имя" name="name" required="">
-          </label>
-          <label>
-            <input type="tel" placeholder="Телефон" name="tel" required="">
-          </label>
-          <label>
-            <textarea placeholder="Ваш вопрос" name="question" required=""></textarea>
-          </label>
-
+          <div class="feedback__form-info">
+            <label>
+              <input type="text" placeholder="Имя" name="name" required="">
+            </label>
+          </div>
+          <div class="feedback__form-info">
+            <label>
+              <input type="tel" placeholder="Телефон" name="tel" required="">
+            </label>
+          </div>
+          <div class="feedback__form-text">
+            <label>
+              <textarea placeholder="Ваш вопрос" name="question"></textarea>
+            </label>
+          </div>
           <button type="submit">Задать вопрос</button>
 
           <div class="feedback__form-personal">
@@ -173,7 +178,7 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper">
     <div class="page-footer__info">
-      <a class="page-footer__logo"><img src="img/logo-footer.svg" alt="Компания Smart Device"></a>
+      <a class="page-footer__logo"><img src="img/logo-footer.svg" width="216" height="52" alt="Компания Smart Device"></a>
       <p class="page-footer__years">1999-2018 SD Service Devices</p>
       <div class="page-footer__social-list">
         <a href="#" class="page-footer__social-item">
@@ -195,9 +200,7 @@
     </div>
     <section class="footer-nav">
       <h2 class="footer-nav__header">Разделы сайта</h2>
-
-      <input class="toggle-footer" type="checkbox" id="hd-1">
-      <label for="hd-1"><span class="visually-hidden">Показать или скрыть меню</span></label>
+      <a href="#" class="toggle-footer"><span class="visually-hidden">Показать или скрыть меню</span></a>
       <ul class="footer-nav__list">
         <li class="footer-nav__item">
           <a href="#" class="footer-nav__link">О компании</a>
@@ -224,9 +227,7 @@
     </section>
     <section class="page-footer__contact">
       <h2 class="page-footer__contact-header">Наш офис</h2>
-
-      <input class="toggle-footer" type="checkbox" id="hd-2">
-      <label for="hd-2"><span class="visually-hidden">Показать или скрыть меню</span></label>
+      <a href="#" class="toggle-footer toggle-footer--open"><span class="visually-hidden">Показать или скрыть меню</span></a>
       <div class="page-footer__contact-wrap">
         <p>г. Мытищи, Олимпийский проспект, д.10</p>
         <a href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -248,7 +249,6 @@
 </footer>
 <div class="modal">
   <div class="modal__form">
-    <a class="modal__close"><span class="visually-hidden">Закрыть модальное окно</span></a>
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form>
@@ -259,7 +259,7 @@
         <input type="tel" placeholder="Телефон" name="tel" required="">
       </label>
       <label>
-        <textarea placeholder="Ваш вопрос" name="question" required=""></textarea>
+        <textarea placeholder="Ваш вопрос" name="question"></textarea>
       </label>
 
       <button type="submit">Отправить</button>
@@ -268,6 +268,7 @@
         <input type="checkbox" id="personal2" name="personal2" required="">
         <label for="personal2" tabindex="0">Я согласен на обработку персональных данных</label>
       </div>
+      <a class="modal__close" href="#" tabindex="0"><span class="visually-hidden">Закрыть модальное окно</span></a>
     </form>
   </div>
 </div>
